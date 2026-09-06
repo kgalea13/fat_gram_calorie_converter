@@ -2,6 +2,10 @@
 This program calculates the amount of calories that are acquired from eating x-amounts of fat and x-amounts of calories.
 
 # Description
+Chapter 5: Functions 
+Programming Exercises
+Exercise # 6: Calories from Fat and Carbohydrates
+
 This program allows the user to input how many fat and carbohydrate grams are eaten that day. Then converts both the fat and carbohydrate grams to calories. Then at the end, the program takes the calories from both sources and adds them together and displays them back to the user.
 
 # Concepts Practiced
