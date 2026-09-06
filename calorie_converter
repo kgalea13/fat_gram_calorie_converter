@@ -1,0 +1,27 @@
+# Global constants
+
+FAT_GRAM_MULTIPLIER = 9
+CARB_GRAM_MULTIPLIER = 4
+
+# Helper functions that help convert fat grams/carb grams to carbohydrate. Both take in a parameter and return a value.
+
+def get_fat_grams(fat_grams):
+    calories_from_fat = fat_grams * FAT_GRAM_MULTIPLIER
+    return calories_from_fat
+
+def get_carb_grams(carb_grams):
+    calories_from_carbs = carb_grams * CARB_GRAM_MULTIPLIER
+    return calories_from_carbs
+
+# Main function that asks for user input of both fat grams and carbohydrate grams. Then uses that information and passes it to the helper functions to convert the grams to calories.
+Then at the end the results are added together and displayed back to the user.
+
+def main():
+
+    fat_grams = float(input('Enter the amount of fat grams you\'ve consumed today: '))
+    carb_grams = float(input('Enter the amount of carb grams you\'ve consumed today: '))
+
+    total_fat_calories = get_fat_grams(fat_grams)
+    total_carb_calories = get_carb_grams(carb_grams)
+
+    print(f'You have eaten: {total_fat_calories} calories of fat today. \nYou have eaten: {total_carb_calories} calories in carbs today.')
